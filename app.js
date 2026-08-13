@@ -65,10 +65,10 @@
     // featured cards
     var feat = document.getElementById("featured");
     if (feat) {
-      var imgs = { monster: "https://snayana-hub.github.io/burger-preview/burger-hero.jpg", "big-bacon": "https://snayana-hub.github.io/burger-preview/big-bacon.jpg", meister: "https://snayana-hub.github.io/burger-preview/meister.jpg" };
+      var imgs = { monster: "1-hero.png", "big-bacon": "2-big-bacon.png", meister: "3-meister.png" };
       feat.innerHTML = FEATURED.map(function (id) {
         var it = findItem(id);
-        return '<article class="card"><div class="card-img"><img src="' + (imgs[id] || "burger-hero.jpg") + '" alt=""></div>' +
+        return '<article class="card"><div class="card-img"><img src="' + (imgs[id] || "1-hero.png") + '" alt=""></div>' +
           "<h3>" + name(it) + "</h3><p>" + desc(it) + "</p>" +
           '<div class="card-foot"><span class="price">' + money(it.p) + "</span>" +
           '<button class="add-btn" data-add="' + it.id + '">' + L("Hinzuf\u00fcgen", "Add") + "</button></div></article>";
