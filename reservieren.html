@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tisch buchen — M— Burger</title>
+<meta name="description" content="Book a table">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<div class="preview-ribbon">
+  <strong>Vorschau / Preview</strong> <span class="i18n" data-de="Platzhalter-Name, Platzhalter-Logo, Preise und Zeiten noch zu best&auml;tigen. Nicht ver&ouml;ffentlicht." data-en="Placeholder name, placeholder logo, prices and hours still to confirm. Not published.">Platzhalter-Name, Platzhalter-Logo, Preise und Zeiten noch zu best&auml;tigen. Nicht ver&ouml;ffentlicht.</span>
+</div>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">M</span>
+    <span class="brand-word">M&mdash; BURGER</span>
+    <span class="brand-flag"><span class="i18n" data-de="Arbeitstitel" data-en="working title">Arbeitstitel</span></span>
+  </a>
+  <nav class="nav">
+    <a href="index.html"><span class="i18n" data-de="Start" data-en="Home">Start</span></a>
+    <a href="speisekarte.html"><span class="i18n" data-de="Speisekarte" data-en="Menu">Speisekarte</span></a>
+    <a href="bestellen.html"><span class="i18n" data-de="Bestellen" data-en="Order">Bestellen</span></a>
+    <a href="reservieren.html"><span class="i18n" data-de="Tisch buchen" data-en="Book a table">Tisch buchen</span></a>
+  </nav>
+  <div class="header-right">
+    <a class="cart-link" href="bestellen.html"><span><span class="i18n" data-de="Warenkorb" data-en="Cart">Warenkorb</span></span> <b id="cart-count">0</b></a>
+    <button class="lang-toggle" id="lang-toggle" type="button"><span class="on">DE</span><span>EN</span></button>
+  </div>
+  <button class="burger-btn" id="burger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<section class="page-head">
+  <h1><span class="i18n" data-de="Tisch buchen" data-en="Book a table">Tisch buchen</span></h1>
+  <p class="lede"><span class="i18n" data-de="F&uuml;r gr&ouml;&szlig;ere Gruppen rufen Sie uns gern an." data-en="For larger groups, give us a call.">F&uuml;r gr&ouml;&szlig;ere Gruppen rufen Sie uns gern an.</span></p>
+</section>
+<section class="section res-grid">
+  <div class="panel">
+    <div class="field-row">
+      <label><span class="i18n" data-de="Datum" data-en="Date">Datum</span><input type="date" id="r-date"></label>
+      <label><span class="i18n" data-de="Uhrzeit" data-en="Time">Uhrzeit</span><input type="time" id="r-time" value="19:00"></label>
+      <label><span class="i18n" data-de="Personenzahl" data-en="No. of people">Personenzahl</span>
+        <select id="r-size"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select>
+      </label>
+    </div>
+    <div class="field-row">
+      <label><span class="i18n" data-de="Name" data-en="Name">Name</span><input type="text" id="r-name" autocomplete="name"></label>
+      <label><span class="i18n" data-de="Telefon" data-en="Phone">Telefon</span><input type="tel" id="r-phone" autocomplete="tel"></label>
+    </div>
+    <label><span class="i18n" data-de="E-Mail" data-en="Email">E-Mail</span><input type="email" id="r-mail" autocomplete="email"></label>
+    <label><span class="i18n" data-de="Anmerkung" data-en="Notes">Anmerkung</span><textarea id="r-note" rows="3"></textarea></label>
+    <button class="btn btn-primary wide" id="place-res"><span class="i18n" data-de="Anfrage senden" data-en="Send request">Anfrage senden</span></button>
+    <p class="tbc"><span class="i18n" data-de="Platzhalter: die Anfrage wird noch nirgendwo gespeichert. Buchungssystem offen." data-en="Placeholder: the request is not stored anywhere yet. Booking system still open.">Platzhalter: die Anfrage wird noch nirgendwo gespeichert. Buchungssystem offen.</span></p>
+  </div>
+  <aside class="panel side">
+    <h3><span class="i18n" data-de="Direkt anrufen" data-en="Call us">Direkt anrufen</span></h3>
+    <p><a href="tel:+4970715667756">+49 7071 5667756</a></p>
+    <div class="foot-rule"></div>
+    <h3><span class="i18n" data-de="Adresse" data-en="Address">Adresse</span></h3>
+    <p>Poststra&szlig;e 2&ndash;4<br>72072 T&uuml;bingen</p>
+    <p><a class="link-more" href="https://maps.app.goo.gl/429EHbxmLvwS3gST7" target="_blank" rel="noopener"><span class="i18n" data-de="Route planen" data-en="Get directions">Route planen</span> &rarr;</a></p>
+  </aside>
+</section>
+<div class="modal" id="modal"><div class="modal-box"><h3 id="modal-title"></h3><p id="modal-body"></p><button class="btn btn-primary" id="modal-close">OK</button></div></div>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <div class="brand foot-brand"><span class="brand-mark">M</span><span class="brand-word">M&mdash; BURGER</span></div>
+      <p class="muted"><span class="i18n" data-de="Echtes amerikanisches Burger-Handwerk, mitten in T&uuml;bingen." data-en="Real American burgers, in the middle of T&uuml;bingen.">Echtes amerikanisches Burger-Handwerk, mitten in T&uuml;bingen.</span></p>
+    </div>
+    <div>
+      <h4><span class="i18n" data-de="Finden" data-en="Find us">Finden</span></h4>
+      <p>Poststra&szlig;e 2&ndash;4<br>72072 T&uuml;bingen</p>
+      <p><a href="tel:+4970715667756">+49 7071 5667756</a></p>
+      <p><a href="https://maps.app.goo.gl/429EHbxmLvwS3gST7" target="_blank" rel="noopener"><span class="i18n" data-de="Auf Google Maps ansehen" data-en="View on Google Maps">Auf Google Maps ansehen</span></a></p>
+    </div>
+    <div>
+      <h4><span class="i18n" data-de="&Ouml;ffnungszeiten" data-en="Opening hours">&Ouml;ffnungszeiten</span></h4>
+      <p class="hours-list">
+        <span class="i18n" data-de="Mo&ndash;Do 11:30&ndash;21:45" data-en="Mon&ndash;Thu 11:30&ndash;21:45">Mo&ndash;Do 11:30&ndash;21:45</span><br><span class="i18n" data-de="Fr&ndash;Sa 11:00&ndash;22:45" data-en="Fri&ndash;Sat 11:00&ndash;22:45">Fr&ndash;Sa 11:00&ndash;22:45</span><br><span class="i18n" data-de="So 11:45&ndash;21:45" data-en="Sun 11:45&ndash;21:45">So 11:45&ndash;21:45</span>
+      </p>
+      <p class="tbc"><span class="i18n" data-de="Zeiten noch zu best&auml;tigen" data-en="hours to be confirmed">Zeiten noch zu best&auml;tigen</span></p>
+    </div>
+    <div>
+      <h4><span class="i18n" data-de="Mehr" data-en="More">Mehr</span></h4>
+      <p><a href="speisekarte.html"><span class="i18n" data-de="Speisekarte" data-en="Menu">Speisekarte</span></a></p>
+      <p><a href="bestellen.html"><span class="i18n" data-de="Bestellen" data-en="Order">Bestellen</span></a></p>
+      <p><a href="reservieren.html"><span class="i18n" data-de="Tisch buchen" data-en="Book a table">Tisch buchen</span></a></p>
+      <p><a href="https://www.ubereats.com/de-en/store/m%26b-burger/qNDt5AvSWz-Jo8SoWG2_nw" target="_blank" rel="noopener">Uber Eats</a></p>
+    </div>
+  </div>
+  <div class="foot-rule"></div>
+  <p class="foot-legal"><span class="i18n" data-de="Vorschau-Seite. Impressum und Datenschutz folgen vor dem Livegang." data-en="Preview site. Imprint and privacy policy to follow before go-live.">Vorschau-Seite. Impressum und Datenschutz folgen vor dem Livegang.</span></p>
+</footer>
+<script src="menu.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
