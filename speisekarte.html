@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speisekarte — M— Burger</title>
+<meta name="description" content="Menu">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<div class="preview-ribbon">
+  <strong>Vorschau / Preview</strong> <span class="i18n" data-de="Platzhalter-Name, Platzhalter-Logo, Preise und Zeiten noch zu best&auml;tigen. Nicht ver&ouml;ffentlicht." data-en="Placeholder name, placeholder logo, prices and hours still to confirm. Not published.">Platzhalter-Name, Platzhalter-Logo, Preise und Zeiten noch zu best&auml;tigen. Nicht ver&ouml;ffentlicht.</span>
+</div>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">M</span>
+    <span class="brand-word">M&mdash; BURGER</span>
+    <span class="brand-flag"><span class="i18n" data-de="Arbeitstitel" data-en="working title">Arbeitstitel</span></span>
+  </a>
+  <nav class="nav">
+    <a href="index.html"><span class="i18n" data-de="Start" data-en="Home">Start</span></a>
+    <a href="speisekarte.html"><span class="i18n" data-de="Speisekarte" data-en="Menu">Speisekarte</span></a>
+    <a href="bestellen.html"><span class="i18n" data-de="Bestellen" data-en="Order">Bestellen</span></a>
+    <a href="reservieren.html"><span class="i18n" data-de="Tisch buchen" data-en="Book a table">Tisch buchen</span></a>
+  </nav>
+  <div class="header-right">
+    <a class="cart-link" href="bestellen.html"><span><span class="i18n" data-de="Warenkorb" data-en="Cart">Warenkorb</span></span> <b id="cart-count">0</b></a>
+    <button class="lang-toggle" id="lang-toggle" type="button"><span class="on">DE</span><span>EN</span></button>
+  </div>
+  <button class="burger-btn" id="burger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<section class="page-head">
+  <h1><span class="i18n" data-de="Speisekarte" data-en="Menu">Speisekarte</span></h1>
+  <p class="lede"><span class="i18n" data-de="Gerichte und Preise aus der aktuellen Lieferkarte &uuml;bernommen. &Auml;nderungen folgen." data-en="Dishes and prices taken from the current delivery menu. Changes to follow.">Gerichte und Preise aus der aktuellen Lieferkarte &uuml;bernommen. &Auml;nderungen folgen.</span></p>
+</section>
+<section class="section" id="menu-root"></section>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <div class="brand foot-brand"><span class="brand-mark">M</span><span class="brand-word">M&mdash; BURGER</span></div>
+      <p class="muted"><span class="i18n" data-de="Echtes amerikanisches Burger-Handwerk, mitten in T&uuml;bingen." data-en="Real American burgers, in the middle of T&uuml;bingen.">Echtes amerikanisches Burger-Handwerk, mitten in T&uuml;bingen.</span></p>
+    </div>
+    <div>
+      <h4><span class="i18n" data-de="Finden" data-en="Find us">Finden</span></h4>
+      <p>Poststra&szlig;e 2&ndash;4<br>72072 T&uuml;bingen</p>
+      <p><a href="tel:+4970715667756">+49 7071 5667756</a></p>
+      <p><a href="https://maps.app.goo.gl/429EHbxmLvwS3gST7" target="_blank" rel="noopener"><span class="i18n" data-de="Auf Google Maps ansehen" data-en="View on Google Maps">Auf Google Maps ansehen</span></a></p>
+    </div>
+    <div>
+      <h4><span class="i18n" data-de="&Ouml;ffnungszeiten" data-en="Opening hours">&Ouml;ffnungszeiten</span></h4>
+      <p class="hours-list">
+        <span class="i18n" data-de="Mo&ndash;Do 11:30&ndash;21:45" data-en="Mon&ndash;Thu 11:30&ndash;21:45">Mo&ndash;Do 11:30&ndash;21:45</span><br><span class="i18n" data-de="Fr&ndash;Sa 11:00&ndash;22:45" data-en="Fri&ndash;Sat 11:00&ndash;22:45">Fr&ndash;Sa 11:00&ndash;22:45</span><br><span class="i18n" data-de="So 11:45&ndash;21:45" data-en="Sun 11:45&ndash;21:45">So 11:45&ndash;21:45</span>
+      </p>
+      <p class="tbc"><span class="i18n" data-de="Zeiten noch zu best&auml;tigen" data-en="hours to be confirmed">Zeiten noch zu best&auml;tigen</span></p>
+    </div>
+    <div>
+      <h4><span class="i18n" data-de="Mehr" data-en="More">Mehr</span></h4>
+      <p><a href="speisekarte.html"><span class="i18n" data-de="Speisekarte" data-en="Menu">Speisekarte</span></a></p>
+      <p><a href="bestellen.html"><span class="i18n" data-de="Bestellen" data-en="Order">Bestellen</span></a></p>
+      <p><a href="reservieren.html"><span class="i18n" data-de="Tisch buchen" data-en="Book a table">Tisch buchen</span></a></p>
+      <p><a href="https://www.ubereats.com/de-en/store/m%26b-burger/qNDt5AvSWz-Jo8SoWG2_nw" target="_blank" rel="noopener">Uber Eats</a></p>
+    </div>
+  </div>
+  <div class="foot-rule"></div>
+  <p class="foot-legal"><span class="i18n" data-de="Vorschau-Seite. Impressum und Datenschutz folgen vor dem Livegang." data-en="Preview site. Imprint and privacy policy to follow before go-live.">Vorschau-Seite. Impressum und Datenschutz folgen vor dem Livegang.</span></p>
+</footer>
+<script src="menu.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
